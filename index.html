@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Girlfriend Day 💖</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      background-image: url('IMG_20240729_171709_562.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      background: rgba(255,255,255,0.9);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 24px;
+      color: #ff69b4;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      color: #333;
+      margin: 10px 0;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      background-color: #ff69b4;
+      color: white;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container" id="slide1">
+      <h1>HAPPY NATIONAL GIRLFRIEND DAY 💖</h1>
+      <p>I wish you knew how much our little talks<br>and the time we spend together mean to me.<br>You are literally my favourite person.</p>
+      <button class="button" onclick="nextSlide()">Next</button>
+    </div>
+
+    <div class="container" id="slide2" style="display:none;">
+      <p>Makasii udah bikin hidup aku lebih happy,<br>with everything about aku merasa<br>sangat beruntung mengenalmu.</p>
+      <p style="margin-top:20px;">I love you infinitely. 💗</p>
+    </div>
+  </div>
+
+  <script>
+    function nextSlide() {
+      document.getElementById("slide1").style.display = "none";
+      document.getElementById("slide2").style.display = "block";
+    }
+  </script>
+</body>
+</html>
